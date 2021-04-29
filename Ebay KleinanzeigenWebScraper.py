@@ -216,4 +216,4 @@ for item in ebayArtikel:
         print(ergebnis)         
 
 #"test"
-#abc
+#abcXXXXXXXXXX
