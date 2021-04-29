@@ -217,3 +217,4 @@ for item in ebayArtikel:
 
 #"test"
 #abcXXXXXXXXXX
+#test von anderem PC
