@@ -217,4 +217,4 @@ for item in ebayArtikel:
 
 #"test"
 #abcXXXXXXXXXX
-#test von 
+#test von ABCDEF
