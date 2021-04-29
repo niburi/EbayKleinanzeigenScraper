@@ -215,3 +215,5 @@ for item in ebayArtikel:
         ergebnis = testclass.loadPage()
         print(ergebnis)         
 
+#"test"
+#abc
