@@ -36,7 +36,8 @@ class StringParser:
         check = check.split(' ')
         for word in check:
             if self.__levenshteinDistance(searchword, word) <= 2:
-                return True
+                if word != 'auch':
+                    return True
 
     def __clearString(self, string):
         """
@@ -192,7 +193,45 @@ class ArticleScraper():
         return searchWordFound
 
 
+class EbayInstance:
+    """
+    Class to keep instance
+    """
+    def __init__(self, credentials):
+        self.__credentials = credentials
+        self.s
+    def login(self):
+        """
+        log into website
+        """
+        payload =   {
+                    "e-mail" : "abc@web.de" 
+                    "password" :  "ABCDEF"
+                    }
+        requests.sessions(payload)
+    def checkBan(self):
+        requests
+        return isBAnned
 
+    def writeMessage(self):
+        """
+        write a message to reciever 
+        """
+
+class Message:
+    def __init__(self, messageKind):
+        self.messageKind = messageKind
+
+    def tradeOffer(self):
+    """
+    set a trade offer to reciever 
+    """
+    
+    def buyOffer(self):
+    """
+    set a buy offer to reciver
+    """
+    #Angebotspreis - Angebotspreis*15% wäre eine Idee für guten Spielraum
 
 
 """
@@ -209,12 +248,8 @@ cl_ebayArtikel = ArticleListScraper('jackson', header)
 ebayArtikel = cl_ebayArtikel.loadData()
 print(len(ebayArtikel))
 for item in ebayArtikel:            
-    if item['price'] != '' and float(item['price']) > 1000:
+    if item['price'] != '' and float(item['price']) > 1000 and float(item['price'] <1 500):
         print(bcolors.WARNING + 'Preis: ' + item['price'] + ', ' + item['main'] + ' Link: ' + item['link'])
         testclass = ArticleScraper(item['link'], header)   
         ergebnis = testclass.loadPage()
         print(ergebnis)         
-
-#"test"
-#abcXXXXXXXXXX
-#test von anderem PC
