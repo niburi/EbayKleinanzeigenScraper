@@ -253,3 +253,10 @@ for item in ebayArtikel:
         testclass = ArticleScraper(item['link'], header)   
         ergebnis = testclass.loadPage()
         print(ergebnis)         
+<<<<<<< HEAD
+=======
+
+#"test"
+#abcXXXXXXXXXX
+#test von ABCDEF
+>>>>>>> e062718821e1599bb85727b553504bfc2018655d
